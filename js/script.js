@@ -16,7 +16,7 @@ $(document).ready(function () {
 // -------------------- функция тайминг-------------------
 document.addEventListener('DOMContentLoaded', function() {
   // конечная дата
-  const deadline = new Date("April 9, 2025 14:46:00").getTime();
+  const deadline = new Date("April 9, 2026 14:46:00").getTime();
   // id таймера
   let timerId = null;
   // склонение числительных

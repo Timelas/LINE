@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'MontserratLight';
+  src: url(./Montserrat-Light.ttf) format('woff2');
+  src: url(./Montserrat-Light.woff) format('woff');
+  src: url(./Montserrat-Light.woff2) format('ttf');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'InterRegular';
+  src: url(./Inter-Regular.ttf) format('woff2');
+  src: url(./Inter-Regular.woff) format('woff');
+  src: url(./Inter-Regular.woff2) format('ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'NotoSerifDisplayLight';
+  src: url(./NotoSerifDisplay-Light.ttf) format('woff2');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+	font-family: 'noto-sans-display-light';
+	src: url(./noto-sans-display-light.ttf) format('woff2');
+	src: url(./noto-sans-display-light.woff) format('woff');
+	src: url(./noto-sans-display-light.woff2) format('ttf');
+	font-style: normal;
+	font-weight: 300;
+ }
+@font-face {
+	font-family: 'RobotoMedium';
+	src: url(./Roboto-Medium.ttf) format('woff2');
+	src: url(./Roboto-Medium.woff) format('woff');
+	src: url(./Roboto-Medium.woff2) format('ttf');
+	font-style: normal;
+	font-weight: 500;
+ }
+@font-face {
+	font-family: 'RobotoLigh';
+	src: url(./Roboto-Ligh.ttf) format('woff2');
+	src: url(./Roboto-Light.woff) format('woff');
+	src: url(./Roboto-Light.woff2) format('ttf');
+	font-style: normal;
+	font-weight: 300;
+ }
+@font-face {
+	font-family: 'MontserratMedium';
+	src: url(./Montserrat-Medium.ttf) format('woff2');
+	src: url(./Montserrat-Medium.woff) format('woff');
+	src: url(./Montserrat-Medium.woff2) format('ttf');
+	font-style: normal;
+	font-weight: 500;
+ }
+@font-face {
+	font-family: 'NotoSansLight';
+	src: url(./NotoSansLight.ttf) format('woff2');
+	src: url(./NotoSansLight.woff) format('woff');
+	src: url(./NotoSansLight.woff2) format('ttf');
+	font-style: normal;
+	font-weight: 300;
+ }
+@font-face {
+	font-family: 'MontserratRegular';
+	src: url(./Montserrat-Regular.ttf) format('woff2');
+	src: url(./Montserrat-Regular.woff) format('woff');
+	src: url(./Montserrat-Regular.woff2) format('ttf');
+	font-style: normal;
+	font-weight: 400;
+ }
+@font-face {
+	font-family: 'NotoSerifRegular';
+	src: url(./NotoSerif.ttf) format('woff2');
+	src: url(./NotoSerif.woff) format('woff');
+	src: url(./NotoSerif.woff2) format('ttf');
+	font-style: normal;
+	font-weight: 400;
+ }

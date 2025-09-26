@@ -1,8 +1,10 @@
 .plan {
 	padding-top: calc(40 / 16 * 1rem);
 	padding-bottom: calc(80 / 16 * 1rem);
+	scroll-margin-top: 112px; 
 	@media (max-width: 650px){
-	padding-bottom: calc(50 / 16 * 1rem);	  
+	padding-bottom: calc(50 / 16 * 1rem);	 
+	scroll-margin-top: 0px; 
 	}
 }
 .plan__container {

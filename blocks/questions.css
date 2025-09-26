@@ -137,7 +137,6 @@ border-radius: calc(6 / 16 * 1rem);
 	content: '';
 	position: absolute;
 	left: calc(0 / 16 * 1rem);
-	top: calc(5 / 16 * 1rem);
 	z-index: 2;
 	width: calc(21 / 16 * 1rem);
 	height: calc(21 / 16 * 1rem);
@@ -190,3 +189,23 @@ border-radius: calc(6 / 16 * 1rem);
 .checkbox__options{
 	white-space: nowrap;;
 }
+
+.fade {
+	opacity: 1;
+	transition: opacity 0.4s ease;
+  }
+  
+  .fade.hidden {
+	opacity: 0;
+  }
+  
+  .thankyou {
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	text-align: center;
+  }
+
+  

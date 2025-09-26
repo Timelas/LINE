@@ -20,8 +20,8 @@
 }
 .footer__text {
 	color: #fff;
-	font-size: calc(14 / 16 * 1rem);
-	font-family: sans-serif;
+	font-size: calc(16 / 16 * 1rem);
+	font-family: var(--font-MontserratLight) ,sans-serif;
 	font-weight: 300;
 	letter-spacing: 0;
 }

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Приглашение на свадьбу</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/icon.ico" type="image/x-icon">
      
 
   <link rel="stylesheet" href="./style/style.css">
@@ -35,7 +35,7 @@
 									<a href="#details" class="header__link">Детали</a>
 							  </li>
 							  <li class="header__li">
-									<a href="#connection" class="header__link">Обратная связь</a>
+									<a href="#dress" class="header__link">Дресс-код</a>
 							  </li>
 							  <li class="header__li">
 									<a href="#question" class="header__link">Опрос</a>
@@ -76,7 +76,7 @@
 									<p>Будем рады разделить с вами чудесный праздник в день нашей свадьбы!</p>
 								</div>
 								<div class="expensive__date">
-									<div class="basic__content-data"><span class="basic__data-day">24</span><span class="basic__data-line"> | </span><span class="basic__data-manth">06</span><span class="basic__data-line"> | </span><span class="basic__data-year">25</span></div>
+									<div class="basic__content-data"><span class="basic__data-day">24</span><span class="basic__data-line"> | </span><span class="basic__data-manth">06</span><span class="basic__data-line"> | </span><span class="basic__data-year">26</span></div>
 								</div>
 							</div>
 						</div>
@@ -159,7 +159,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="dress">
+				<section class="dress" id="dress">
 					<div class="dress__container">
 						<div class="dress__content">
 							<div class="component dress__component">
@@ -192,29 +192,6 @@
 						</div>
 					</div>
 				</section>
-				<section class="connection" id="connection">
-					<div class="connection__contant">
-							<div class="component connection__component ">
-								<h2 class="title connection__title ">Обратная связь</h2>
-								<div class="component__par connection__component__par ">
-									<p>Пожалуйста, подтвердите ваше присутствие на нашем празднике до <span class="no_wrap">01 мая 2024 года</span>  любым удобным для вас способом или заполните форму ниже</p>
-								</div>
-							</div>
-							<div class="connection__form">
-								<form action="#">
-									<input required autocomplete="off" type="text" name="name" placeholder="Имя и Фамилия" class="input connection__input ">
-									<input required autocomplete="off" min="0" type="number" name="number" placeholder="Количество гостей" class="input connection__input ">
-									<div class="connection__button">
-										<button class="connection__btn btn btn_white">Добавить гостя</button>
-										<div class="connection__buttons">
-											<a href="#" type="submit" class="connection__btn-subm btn btn_white">Подтвердить</a>
-											<a href="#" type="reset" class="connection__btn-res btn btn_white">Отклонить</a>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-				</section>
 				<section class="question" id="question">
 					<div class="question__container">
 						<div class="question__wrapper">
@@ -228,52 +205,64 @@
 								</div> 
 							</div>
 							<div class="question__form">
-								<form class="form__form" action="#">
+								<form id="survey-form" class="form__form" action="#">
+									<!-- Имя -->
 									<input required autocomplete="off" type="text" name="name" placeholder="Имя и Фамилия" class="input question__input">
+								  
+									<!-- Будете ли вы присутствовать -->
 									<div class="question__radio__block">
-										<h2 class="radio__block__title ">Понадобится ли вам трансфер:</h2>
-												<div class="radio__transfer question__radio__transfer ">
-													<div class="form__item">
-														<div class="options questions__options">
-															<input checked id="transfer_yeas" type="radio" name="transfer"  class="input radio__input">
-															<label for="transfer_yeas" class="labal question__labal "><span class="radio__text ">Да</span></label>
-														</div>
-														<div class="options questions__options">
-															<input  id="transfer_not" type="radio" name="transfer"  class="input radio__input">
-															<label for="transfer_not" class="labal question__labal "><span class="radio__text ">Нет</span></label>
-														</div>
-													</div>
-												</div>
-									</div>
-									<div class="question__check-block">
-										<h2 class="check-block__title">Предпочтение по еде:</h2>
-										<div class="check__eat">
-											<div class="form__item">
-												<div class="options  checkbox__options ">
-													<input  checked  id="formredchiken" class="checkbox__input" type="checkbox" name="chiken" />
-													<label for="formredchiken" class="labal  checkbox__label"><span class="checkbox__text">Курица</span></label>
-												</div>
-												<div class="options  checkbox__options ">
-													<input id="formwhitefich"  class="checkbox__input" type="checkbox" name="fich" />
-													<label for="formwhitefich" class="labal  checkbox__label"><span class="checkbox__text">Рыба</span></label>
-												</div>
-												<div class="options  checkbox__options ">
-													<input id="formmeat"  class="checkbox__input" type="checkbox" name="meat" />
-													<label for="formmeat" class="labal  checkbox__label"><span class="checkbox__text">Мясо</span></label>
-												</div>
-											</div>
+									  <h2 class="radio__block__title">Будете ли вы присутствовать?</h2>
+									  <div class="radio__transfer question__radio__transfer">
+										<div class="form__item">
+										  <div class="options questions__options">
+											<input checked id="yes" type="radio" name="rsvp" class="input radio__input">
+											<label for="yes" class="labal question__labal"><span class="radio__text">Да</span></label>
+										  </div>
+										  <div class="options questions__options">
+											<input id="not" type="radio" name="rsvp" class="input radio__input">
+											<label for="not" class="labal question__labal"><span class="radio__text">Нет</span></label>
+										  </div>
 										</div>
+									  </div>
 									</div>
-									
-									<div class="question__input__block">
-										<h2 class="input__block__title ">Предпочтение по алкоголю:</h2>
-										<input required autocomplete="off" type="text" name="alcohol"  class="input question__input">
+								  
+									<!-- Предпочтение по еде -->
+									<div class="question__check-block fade">
+									  <h2 class="check-block__title">Предпочтение по еде:</h2>
+									  <div class="check__eat">
+										<div class="form__item">
+										  <div class="options checkbox__options">
+											<input checked id="formredchiken" class="checkbox__input" type="checkbox" name="food" value="chicken" />
+											<label for="formredchiken" class="labal checkbox__label"><span class="checkbox__text">Курица</span></label>
+										  </div>
+										  <div class="options checkbox__options">
+											<input id="formwhitefich" class="checkbox__input" type="checkbox" name="food" value="fish" />
+											<label for="formwhitefich" class="labal checkbox__label"><span class="checkbox__text">Рыба</span></label>
+										  </div>
+										  <div class="options checkbox__options">
+											<input id="formmeat" class="checkbox__input" type="checkbox" name="food" value="meat" />
+											<label for="formmeat" class="labal checkbox__label"><span class="checkbox__text">Мясо</span></label>
+										  </div>
+										</div>
+									  </div>
 									</div>
-									<a href="#" type="submit" class="question__form__btn btn btn__black">Подтвердить</a>
-								</form>
-							</div>
-						</div>
-					</div>
+								  
+									<!-- Предпочтение по алкоголю -->
+									<div class="question__input__block fade">
+									  <h2 class="input__block__title">Предпочтение по алкоголю:</h2>
+									  <input autocomplete="off" type="text" name="alcohol" class="input question__input">
+									</div>
+								  
+									<!-- Кнопка -->
+									<button type="submit" class="question__form__btn btn btn__black">Подтвердить</button>
+								  </form>
+								  
+								  <!-- Заглушка -->
+								  <div id="thankyou" class="thankyou" style="display:none;">
+									<h2>Ваш опрос отправлен</h2>
+									<button id="newGuest" class="btn btn__black">Заполнить снова</button>
+								  </div>
+								  
 				</section>
 				<section class="timer">
 					<div class="timer__container">
@@ -303,8 +292,7 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__wrapper">
-				<p class="footer__text">С любовью,</p>
-				<p class="footer__text--inv">Владимир и Наталья</p>
+				<p class="footer__text">С любовью, Владимир и Наталья</p>
 			</div>
 		</footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

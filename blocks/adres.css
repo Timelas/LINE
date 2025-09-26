@@ -4,6 +4,7 @@
 	padding-left: calc(0 / 16 * 1rem);
 	padding-right: calc(0 / 16 * 1rem);
 	box-shadow: 0 4px 4px 0 rgba(0,0,0,.25); 
+	scroll-margin-top: 112px; 
 
 	@media (max-width: 992.98px){
 	padding-top: calc(192 / 16 * 1rem);
@@ -12,6 +13,7 @@
 	@media (max-width: 650px){
 	padding-top: calc(61 / 16 * 1rem);
 	padding-bottom: calc(285 / 16 * 1rem);  
+	scroll-margin-top: 0px; 
 	}
 }
 .ibg {

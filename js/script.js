@@ -65,3 +65,67 @@ document.addEventListener('DOMContentLoaded', function() {
   change();
   timerId = setInterval(change, 1000);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const yesRadio = document.getElementById("yes");
+  const noRadio = document.getElementById("not");
+
+  const form = document.getElementById("survey-form");
+  const thankyou = document.getElementById("thankyou");
+  const newGuestBtn = document.getElementById("newGuest");
+
+  const extraBlocks = document.querySelectorAll(
+    ".question__check-block, .question__input__block"
+  );
+
+  // скрытие/показ блоков
+  function toggleBlocks() {
+    if (noRadio.checked) {
+      extraBlocks.forEach(block => {
+        block.classList.add("hidden");
+        block.style.display = "none";
+      });
+    } else {
+      extraBlocks.forEach(block => {
+        block.style.display = "";
+        block.classList.remove("hidden");
+      });
+    }
+  }
+
+  yesRadio.addEventListener("change", toggleBlocks);
+  noRadio.addEventListener("change", toggleBlocks);
+  toggleBlocks();
+
+  // валидация и отправка
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const name = form.elements["name"].value.trim();
+    const alcohol = form.elements["alcohol"].value.trim();
+
+    if (!name) {
+      alert("Введите имя и фамилию");
+      return;
+    }
+
+    if (yesRadio.checked && !alcohol) {
+      alert("Заполните предпочтение по алкоголю");
+      return;
+    }
+
+    // форма валидна → показываем заглушку
+    form.style.display = "none";
+    thankyou.style.display = "flex";
+  });
+
+  // новая анкета
+  newGuestBtn.addEventListener("click", () => {
+    form.reset();
+    toggleBlocks();
+    thankyou.style.display = "none";
+    form.style.display = "flex";
+  });
+});
+
+

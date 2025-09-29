@@ -100,32 +100,55 @@ document.addEventListener("DOMContentLoaded", () => {
   // валидация и отправка
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-
-    const name = form.elements["name"].value.trim();
-    const alcohol = form.elements["alcohol"].value.trim();
-
-    if (!name) {
-      alert("Введите имя и фамилию");
-      return;
+  
+    const name = form.elements["name"];
+    const alcohol = form.elements["alcohol"];
+    let valid = true;
+  
+    // очищаем предыдущие ошибки
+    document.querySelectorAll(".error-message").forEach(el => el.remove());
+    name.classList.remove("error");
+    alcohol.classList.remove("error");
+  
+    // проверка имени
+    if (!name.value.trim()) {
+      const error = document.createElement("div");
+      error.className = "error-message";
+      error.innerText = "Введите имя и фамилию";
+      name.after(error);
+      name.classList.add("error");
+      valid = false;
     }
-
-    if (yesRadio.checked && !alcohol) {
-      alert("Заполните предпочтение по алкоголю");
-      return;
+  
+    // проверка алкоголя, если выбран yesRadio
+    if (yesRadio.checked && !alcohol.value.trim()) {
+      const error = document.createElement("div");
+      error.className = "error-message";
+      error.innerText = "Заполните предпочтение по алкоголю";
+      alcohol.after(error);
+      alcohol.classList.add("error");
+      valid = false;
     }
-
+  
+    if (!valid) return;
+  
     // форма валидна → показываем заглушку
     form.style.display = "none";
     thankyou.style.display = "flex";
   });
-
+  
   // новая анкета
   newGuestBtn.addEventListener("click", () => {
     form.reset();
     toggleBlocks();
     thankyou.style.display = "none";
     form.style.display = "flex";
-  });
+  
+    // очищаем ошибки
+    document.querySelectorAll(".error-message").forEach(el => el.remove());
+    form.querySelectorAll(".error").forEach(el => el.classList.remove("error"));
+  });  
 });
+
 
 

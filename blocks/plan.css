@@ -80,11 +80,7 @@
 	text-transform: uppercase;
 	line-height: 120%;
 	@media (max-width: 650px){
-		text-align: center;
-	}
-	@media (max-width: 385px){
-	font-size: calc(50 / 16 * 1rem);
-		  
+		font-size: calc(32 / 16 * 1rem);
 	}
 }
 .inner-plan__text {

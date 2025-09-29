@@ -17,9 +17,9 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__body">
-					<div class="header__burger">
-						 <span></span>
-					</div>
+						<div class="header__burger">
+							<span></span>
+					   </div>
 					<nav class="header__menu">
 						 <ul class="header__list">
 							  <li class="header__li">
@@ -207,8 +207,9 @@
 							<div class="question__form">
 								<form id="survey-form" class="form__form" action="#">
 									<!-- Имя -->
-									<input required autocomplete="off" type="text" name="name" placeholder="Имя и Фамилия" class="input question__input">
-								  
+									<div class="form__field">
+										<input type="text" name="name" placeholder="Имя и Фамилия" class="input question__input">
+									  </div>
 									<!-- Будете ли вы присутствовать -->
 									<div class="question__radio__block">
 									  <h2 class="radio__block__title">Будете ли вы присутствовать?</h2>
@@ -250,7 +251,9 @@
 									<!-- Предпочтение по алкоголю -->
 									<div class="question__input__block fade">
 									  <h2 class="input__block__title">Предпочтение по алкоголю:</h2>
-									  <input autocomplete="off" type="text" name="alcohol" class="input question__input">
+									  <div class="form__field">
+										<input autocomplete="off" type="text" name="alcohol" class="input question__input">
+									  </div>
 									</div>
 								  
 									<!-- Кнопка -->

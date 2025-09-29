@@ -210,4 +210,26 @@ border-radius: calc(6 / 16 * 1rem);
 	text-align: center;
   }
 
+  .error {
+	border-color: red;
+  }
+  
+  .form__field {
+	display: flex;
+	flex-direction: column;
+	gap: 4px; /* расстояние между инпутом и ошибкой */
+  }
+  
+  .error-message {
+	margin: 0; /* обнуляем, чтобы не добавляло лишнего */
+	font-size: 14px;
+	line-height: 1.2;
+	color: red;
+	@media (max-width: 650px){
+		font-size: 12px;
+		}
+  }
+  
+  
+
   

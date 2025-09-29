@@ -3,6 +3,9 @@
 	padding-top: calc(80 / 16 * 1rem);
 	padding-bottom: calc(80 / 16 * 1rem);
 	scroll-margin-top: 112px;
+	@media (max-width: 992px){
+		scroll-margin-top: 0px; 
+ }
 	@media (max-width: 710px){
 		padding-top: calc(40 / 16 * 1rem);
 		padding-bottom: calc(40 / 16 * 1rem);

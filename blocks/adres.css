@@ -9,6 +9,7 @@
 	@media (max-width: 992.98px){
 	padding-top: calc(192 / 16 * 1rem);
 	padding-bottom: calc(545 / 16 * 1rem); 
+	scroll-margin-top: 0px; 
 	}
 	@media (max-width: 650px){
 	padding-top: calc(61 / 16 * 1rem);
